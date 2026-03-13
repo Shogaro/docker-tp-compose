@@ -38,9 +38,9 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 
 ## Questions de reflexion
 
-- Pourquoi `api` doit-il etre connecte a deux reseaux dans cette architecture ?
-- Quel interet de combiner `build` et `image` sur un meme service ?
-- Pourquoi la base ne doit-elle pas etre publiee avec `ports` dans ce cas ?
+- Pourquoi `api` doit-il etre connecte a deux reseaux dans cette architecture ? Car elle doit récupérer les infos du bakc pour les envoyer au front
+- Quel interet de combiner `build` et `image` sur un meme service ? On peut créer notre image avec notre propre code
+- Pourquoi la base ne doit-elle pas etre publiee avec `ports` dans ce cas ? Sinon ça expose la db ce qui n'est pas une bonne chose
 
 ## Criteres de validation
 
