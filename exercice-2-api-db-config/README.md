@@ -33,9 +33,9 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 
 ## Questions de reflexion
 
-- Quelle difference entre `environment` et `env_file` ?
-- Pourquoi un volume nomme est-il utile pour la base de donnees ?
-- Que garantit `depends_on` et que ne garantit-il pas ?
+- Quelle difference entre `environment` et `env_file` ? environment permet de définir les variables d'environnement alors que env_file permet de dire ou trouver les valeurs qu'on a assigné à ces variables.
+- Pourquoi un volume nomme est-il utile pour la base de donnees ? C'est utile car ça alloue une place aux données donc même en arrêtant le conteneur on garde les données
+- Que garantit `depends_on` et que ne garantit-il pas ? depends_on permet de démarrer le service uniquement si ça dépendance est lancée
 
 ## Criteres de validation
 

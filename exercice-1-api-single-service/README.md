@@ -26,9 +26,9 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 
 ## Questions de reflexion
 
-- Quel est l'avantage de decrire ce service dans un fichier plutot qu'avec `docker run` ?
-- Quelle difference entre le nom du service et le nom du conteneur cree ?
-- Que permettent `docker compose ps` et `docker compose logs` pendant le diagnostic ?
+- Quel est l'avantage de decrire ce service dans un fichier plutot qu'avec `docker run` ? On centralise toutes les actions plutôt que de devoir tout recréer à la main et devoir supprimer les images et conteneurs à la main
+- Quelle difference entre le nom du service et le nom du conteneur cree ? Le nom du service permet de le référencer alors que le conteneur c'est le nom qu'on lui donne à la création
+- Que permettent `docker compose ps` et `docker compose logs` pendant le diagnostic ? ps permet de lister les conteneurs avec leur état et logs permet de voir ce qui se passe dans le conteneur 
 
 ## Criteres de validation
 
